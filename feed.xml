@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title><![CDATA[노래방]]></title>
+  <link>https://mqlwmsltm-arch.github.io/bp-osaka-junk</link>
+  <description><![CDATA[노래방 - 상수 노래방 추천정보 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 02:51:34 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 02:51:34 GMT</lastBuildDate>
+  <atom:link href="https://mqlwmsltm-arch.github.io/bp-osaka-junk/feed.xml" rel="self" type="application/rss+xml" />
+  
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/checklist-001-13mnegy.html</link>
+      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/checklist-001-13mnegy.html</guid>
+      <description><![CDATA[Apache Superset 2.0 릴리스 전 PyPI에서 삭제된 RC3 빌드의 취약점과 삭제 이유 분석 ## 첫 문장아, 진짜... Apache Superset 2.0 릴리스에서는 RC3 빌드가 PyPI에서 삭제되었고, 이 변화는 취약점 관리 및 구버전 업그레이드의 ]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[커스텀 키보드 빌더의 이야기 - Cherry MX 스위치의 미세한 차이]]></title>
+      <link>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/guide-003.html</link>
+      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/guide-003.html</guid>
+      <description><![CDATA[## 키보드 스위치 선택의 중요성커스텀 키보드 빌더로서, 키보드 스위치의 선택은 매우 중요합니다. 특히, Cherry MX 스위치의 경우, 독일 공장과 중국 공장 생산분의 미세한 작동음 차이가 있습니다. 이 차이는 키보드의 전반적인 성능과 사용자의 만족도에 큰 영향을 ]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[상수 노래방 추천정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점]]></title>
+      <link>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/myth-002-13mnegy.html</link>
+      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/myth-002-13mnegy.html</guid>
+      <description><![CDATA[제목: 창작한 제목 아, 진짜... 2021년 겨울, 서버실 온도가 42도까지 올라갔다. 커스텀 PC를 만들던 중, 백라이트 블리드 패턴이 나타났다. 제조사는 무상교체 조건을 내세웠지만, 특정 IPS 패널 로트만 불량으로 간주되었다. ### 구조 #### 단계 1: 실]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Q4_K_M 양자화의 &#39;그 놈의 히든 딤&#39; 때문에 Llama 2-7B가 멍청해진 썰]]></title>
+      <link>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/review-001.html</link>
+      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/review-001.html</guid>
+      <description><![CDATA[프로덕션 환경에 Llama 2-7B를 띄운 지 석 달쯤 됐을까. 처음엔 '이거 완전 물건인데?' 싶었지. 튜닝도 착착 감기고, 응답 속도도 괜찮았어. 근데 어느 날부터인가, 뭔가 이상한 낌새가 보이더라니까. 특히 instruction following 쪽에서 미묘하게 ]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[특정 IPS 패널 &#39;블리드&#39; 뽑기운이라고? 아니, 그건 제조사 공식 리비전 코드 문제였다 (feat. 무상교체 각 재는 법)]]></title>
+      <link>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/review-002.html</link>
+      <guid isPermaLink="true">https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/review-002.html</guid>
+      <description><![CDATA[솔직히 내가 이 바닥에서 밥벌이한 지가 몇 년인데, 이런 건 처음부터 딱 보면 각이 나옵니다. 요즘 IPS 패널 모니터들, 특히 특정 가격대에서 심심찮게 백라이트 블리드 이슈가 터져 나오더군요. 물론 '뽑기운'이라고들 하지만, 가끔은 그 '운'이 아니라 명백한 '설계 ]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+</channel>
+</rss>

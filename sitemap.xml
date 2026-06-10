@@ -2,39 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
   <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/normal-1.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/checklist-001-13mnegy.html</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/normal-2.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/guide-003.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/normal-3.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/myth-002-13mnegy.html</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/juice-1.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/review-001.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/juice-2.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/posts/review-002.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mqlwmsltm-arch.github.io/bp-osaka-junk/feed.xml</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
