@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RC3 PyPI 삭제, Superset 2.0에서 겪은 디스크 I/O 폭발의 진짜 원인 비교</title>
+  <link rel="canonical" href="https://the-club-euljiro.xyz/posts/compare-002-kk50im.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>RC3 PyPI 삭제, Superset 2.0에서 겪은 디스크 I/O 폭발의 진짜 원인 비교</h1>
+    <article>
+      <p>프로덕션 Superset 인스턴스를 2.0 RC3로 올린 게 화근이었다. 점심 먹고 들어가 보니 디스크 I/O가 평소 대비 300% 뛰어 있었다. 처음에는 캐시 웜업이나 쿼리 폭주를 의심했지만, iostat로 확인해보니 Write I/O가 유난히 높았다. 메타데이터 DB(PostgreSQL)에 쓰기 트랜잭션이 계속 밀리고 있는 패턴이었다. 그래서 PyPI 릴리스 페이지를 확인하려고 했는데, RC3 빌드가 이미 삭제되어 있었다. 이게 무슨 일인가 싶어서 추적을 시작했다.</p>
+<p>## 관찰 시각: 공식 릴리스와 실제 패키지 불일치</p>
+<p>처음 발견한 단서는 릴리스 노트와 실제 wheel 파일의 해시 차이였다. 공식 아파치 사이트에는 RC3에 대한 변경 로그가 남아 있었지만, PyPI에 올라와 있는 패키지의 SHA256이 릴리스 태그와 일치하지 않았다. 보통 RC 빌드는 PyPI에 임시로 올렸다가 정식 릴리스 전에 내리는 경우가 많다. 하지만 이번에는 패키지 자체에 문제가 있어서 삭제된 것 같았다. 구체적으로, `setup.py`에 포함된 의존성 버전 고정이 누락된 지점이 있었다.</p>
+<p>## 단서 추적: 디스크 I/O 급증과 연결되는 트리거</p>
+<p>Write I/O가 급증한 명확한 트리거는 `created_dttm` 인덱스 리빌드였다. Superset은 내부적으로 exploration과 dashboard 메타데이터를 주기적으로 정리하는데, RC3에서 추가된 `purge_expired_data` 태스크가</p>
+
+    <div class="juice-ref-qep2n8" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>관련 업계 트렌드와 통계는 <a href="https://maphoshirts.live/">t2-shinjuku-mens</a>에 정리되어 있습니다.</li>
+      <li>보다 권위있는 출처의 공식 정보는 <a href="https://aga-clinic.space/">tokyo-aga</a>에서 제공 중입니다.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://github.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
