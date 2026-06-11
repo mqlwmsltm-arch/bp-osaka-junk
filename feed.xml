@@ -5,8 +5,8 @@
   <link>https://the-club-euljiro.xyz</link>
   <description><![CDATA[노래방 - 상수 노래방 추천정보 관련 최신 소식 및 가이드]]></description>
   <language>ko</language>
-  <pubDate>Wed, 10 Jun 2026 23:26:04 GMT</pubDate>
-  <lastBuildDate>Wed, 10 Jun 2026 23:26:04 GMT</lastBuildDate>
+  <pubDate>Thu, 11 Jun 2026 01:33:21 GMT</pubDate>
+  <lastBuildDate>Thu, 11 Jun 2026 01:33:21 GMT</lastBuildDate>
   <atom:link href="https://the-club-euljiro.xyz/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
@@ -52,6 +52,20 @@
       <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
+      <title><![CDATA[RoPE theta 50M에서 Attention Sink가 터지는 순간 - 상수 노래방에서 배운 실전 튜닝]]></title>
+      <link>https://the-club-euljiro.xyz/posts/field_note-002-5ey9b1.html</link>
+      <guid isPermaLink="true">https://the-club-euljiro.xyz/posts/field_note-002-5ey9b1.html</guid>
+      <description><![CDATA[우리는 Q8_0 양자화 PR을 머지 직전까지 밀어붙이고 있었다. Llama 3.1 8B, 기본 RoPE theta 500k에서 perplexity 변화는 극미했고, 모든 벤치마크를 통과했다. 그런데 내 스크립트에서 재현 환경이 다른 GPU에서 다른 결과를 내더라. H1]]></description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[IPS 로트 블리드, 오버클럭 커뮤니티에서 배운 쓴맛 나는 교훈]]></title>
+      <link>https://the-club-euljiro.xyz/posts/guide-003-7l42ao.html</link>
+      <guid isPermaLink="true">https://the-club-euljiro.xyz/posts/guide-003-7l42ao.html</guid>
+      <description><![CDATA[IPS 패널에서 백라이트 블리드는 피할 수 없는 운명처럼 여겨진다. 하지만 특정 로트, 특히 2022년 말 AUO 패널 중 B.O.E.와의 하이브리드 구조를 채택한 일부 물량에서만 나타나는 절대적인 패턴이 존재한다. 이걸 모르고 그냥 "IPS는 원래 그래" 하고 넘기면]]></description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
       <title><![CDATA[커스텀 키보드 빌더의 이야기 - Cherry MX 스위치의 미세한 차이]]></title>
       <link>https://the-club-euljiro.xyz/posts/guide-003.html</link>
       <guid isPermaLink="true">https://the-club-euljiro.xyz/posts/guide-003.html</guid>
@@ -71,6 +85,13 @@
       <guid isPermaLink="true">https://the-club-euljiro.xyz/posts/qa-001-86au54.html</guid>
       <description><![CDATA[우리는 블로그 포스트를 작성해야 합니다. 주제에 대한 깊이 있는 지식을 가지고 긱 페르소나로 자연스럽게 글을 작성해야 합니다. 첫 문장은 감탄사 대신 핵심 정보나 질문으로 시작합니다. 주제: Cloudflare의 cache reserve가 특정 엣지 로케이션에서 최대 ]]></description>
       <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[창작한 제목]]></title>
+      <link>https://the-club-euljiro.xyz/posts/review-001-1iphktp.html</link>
+      <guid isPermaLink="true">https://the-club-euljiro.xyz/posts/review-001-1iphktp.html</guid>
+      <description><![CDATA[*필자는 생계형 관전자 팩트폭력형 캐릭터로, 감정 배제하고 논리와 사실로만 글을 씁니다. 주제는 특정 IPS 패널 로트의 백라이트 블리드 패턴과 무상교체 조건입니다. 관점은 '오버클럭 커뮤니티 운영자' 시점에서 '비공식 전압 언락 방법과 벽돌 위험' 갈등을 중심으로 서]]></description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title><![CDATA[상수 노래방 추천정보 솔직 후기 — 3개월 써본 사람의 리얼 리뷰]]></title>
