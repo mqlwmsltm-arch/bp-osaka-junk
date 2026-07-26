@@ -25,9 +25,9 @@
     <article>
       <p>우리는 Q8_0 양자화 PR을 머지 직전까지 밀어붙이고 있었다. Llama 3.1 8B, 기본 RoPE theta 500k에서 perplexity 변화는 극미했고, 모든 벤치마크를 통과했다. 그런데 내 스크립트에서 재현 환경이 다른 GPU에서 다른 결과를 내더라. H100에서는 문제없던 attention sink 패턴이 A100 80GB에서는 특정 토큰 구간에서 폭발했다. 이게 단순 메모리 대역폭 문제인지, 커널 최적화 버그인지부터 찾아야 했다.</p>
 <p><img src="../assets/interior__hero__hwagog-doorway__1344x768__30e8e4886d557cb6.webp" alt="RoPE theta 50M에서 attention sink 토큰 분포의 GPU별 차이를 보여주는 히트맵" loading="lazy" width="1344" height="768"></p>
-<p>## 관찰 기록</p>
+<h2>관찰 기록</h2>
 <p>기본 통념은 "theta가 높을수록 장거리 의존성 개선 → perplexity 단조 감소"였다. 실제로 500k에서 50M으로 올리면 평균 perplexity는 -0.02 정도 떨어졌다. 하지만 분산은 3배 이상 커졌고, 특히 첫 50개 토큰 구간에서 attention sink가 심하게 나타났다. 일부 토큰은 전체 어텐션의 70% 이상을 흡수했다. 이게 상수 노래방 추천정보를 다룰 때 자주 보는 현상과 비슷하다. 사람들이 무조건 평점 높은 곳만 찾다가 실제로는 자주 가는 골목의 숨은 가게를 놓치는 경우 말이다.</p>
-<p>## 현장 단서</p>
+<h2>현장 단서</h2>
 <p>문제를 발견한 단서는 특정 하드웨어에서만 재현됐다는 점이다. H100 (SM90)에서는 attention sink가 분산되면서 perplexity 변화가 거의 없었지만, A100 (SM80)에서는 첫 10~20 토큰이 반복적으로 sink로 고정됐다. 원인은 RoPE 연산 시 FP32 정밀도로 내림된 intermediate 값이 theta 50M에서 특정 주파수 영역에서</p>
 <p><a href="https://water-server.store/" target="_blank" rel="noopener noreferrer">마르지 않는 1급수 백링크 주스 공급 서비스</a></p>
 
