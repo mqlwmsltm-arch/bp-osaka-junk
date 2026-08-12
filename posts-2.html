@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/3) · osaka-junk</title>
+  <meta name="description" content="osaka-junk에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://blog.the-club-euljiro.xyz/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --font-main: 'Helvetica Neue', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+ --font-mono: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+ --color-bg: #ffffff;
+ --color-text: #1d1d1f;
+ --color-text-secondary: #86868b;
+ --color-border: #d2d2d7;
+ --color-accent: #000000;
+ --spacing-unit: 8px;
+ --container-width: 980px;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ font-family: var(--font-main);
+ background-color: var(--color-bg);
+ color: var(--color-text);
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ a {
+ text-decoration: none;
+ color: inherit;
+ transition: opacity 0.2s ease;
+ }
+
+ a:hover {
+ opacity: 0.6;
+ }
+
+ /* Layout */
+ .container {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+
+ /* Header */
+ header {
+ border-bottom: 1px solid var(--color-border);
+ padding: 24px 0;
+ position: sticky;
+ top: 0;
+ background: rgba(255, 255, 255, 0.9);
+ backdrop-filter: blur(10px);
+ z-index: 100;
+ }
+
+ .nav-wrapper {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: var(--font-mono);
+ font-weight: 700;
+ font-size: 24px;
+ letter-spacing: -0.5px;
+ }
+
+ nav ul {
+ display: flex;
+ list-style: none;
+ gap: 32px;
+ }
+
+ nav li {
+ font-size: 14px;
+ font-weight: 500;
+ }
+
+ /* Main Content */
+ main {
+ padding: 80px 0;
+ }
+
+ .article-header {
+ margin-bottom: 60px;
+ border-bottom: 1px solid var(--color-border);
+ padding-bottom: 40px;
+ }
+
+ .meta-tag {
+ font-family: var(--font-mono);
+ font-size: 12px;
+ color: var(--color-text-secondary);
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ margin-bottom: 16px;
+ display: block;
+ }
+
+ h1 {
+ font-size: 48px;
+ font-weight: 700;
+ letter-spacing: -1.5px;
+ line-height: 1.1;
+ margin-bottom: 24px;
+ }
+
+ .lead {
+ font-size: 21px;
+ font-weight: 400;
+ color: var(--color-text-secondary);
+ max-width: 700px;
+ line-height: 1.5;
+ }
+
+ .article-body {
+ font-size: 17px;
+ line-height: 1.8;
+ color: #333;
+ }
+
+ .article-body h2 {
+ font-size: 32px;
+ font-weight: 600;
+ letter-spacing: -0.5px;
+ margin: 60px 0 24px 0;
+ }
+
+ .article-body h3 {
+ font-size: 24px;
+ font-weight: 600;
+ margin: 40px 0 16px 0;
+ }
+
+ .article-body p {
+ margin-bottom: 32px;
+ }
+
+ .article-body ul {
+ margin-bottom: 32px;
+ padding-left: 20px;
+ }
+
+ .article-body li {
+ margin-bottom: 12px;
+ list-style-type: disc;
+ }
+
+ .data-box {
+ background-color: #f5f5f7;
+ border: 1px solid var(--color-border);
+ padding: 32px;
+ margin: 40px 0;
+ border-radius: 12px;
+ }
+
+ .data-box h4 {
+ font-family: var(--font-mono);
+ font-size: 14px;
+ margin-bottom: 16px;
+ color: var(--color-text-secondary);
+ }
+
+ .stat-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 20px;
+ }
+
+ .stat-item strong {
+ display: block;
+ font-size: 24px;
+ font-weight: 700;
+ margin-bottom: 4px;
+ }
+
+ .stat-item span {
+ font-size: 14px;
+ color: var(--color-text-secondary);
+ }
+
+ /* FAQ Section */
+ .faq-section {
+ margin-top: 80px;
+ border-top: 1px solid var(--color-border);
+ padding-top: 60px;
+ }
+
+ .faq-title {
+ font-size: 24px;
+ font-weight: 600;
+ margin-bottom: 32px;
+ }
+
+ .faq-item {
+ margin-bottom: 24px;
+ }
+
+ .faq-question {
+ font-weight: 600;
+ font-size: 17px;
+ margin-bottom: 8px;
+ cursor: pointer;
+ }
+
+ .faq-answer {
+ color: var(--color-text-secondary);
+ font-size: 15px;
+ }
+
+ /* Footer */
+ footer {
+ border-top: 1px solid var(--color-border);
+ padding: 60px 0;
+ margin-top: 80px;
+ font-size: 12px;
+ color: var(--color-text-secondary);
+ }
+
+ .footer-content {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ gap: 20px;
+ }
+
+ .footer-logo {
+ font-family: var(--font-mono);
+ font-weight: 700;
+ color: var(--color-text);
+ margin-bottom: 10px;
+ display: block;
+ }
+
+ @media (max-width: 768px) {
+ h1 { font-size: 36px; }
+ .nav-wrapper { flex-direction: column; gap: 20px; }
+ nav ul { gap: 20px; }
+ .container { padding: 0 24px; }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/3) · osaka-junk">
+  <meta property="og:description" content="osaka-junk에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://blog.the-club-euljiro.xyz/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container nav-wrapper">
+ <a href="/" class="logo">OSAKA_JUNK</a>
+ <nav>
+ <ul>
+ <li><a href="/">Home</a></li>
+ <li><a href="/about">About</a></li>
+ <li><a href="/blog">Blog</a></li>
+ <li><a href="/contact">Contact</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 43개 · 2/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0239.html">상수 노래방 추천정보로 확인하는 구글 틈새 키워드 트래픽 외환 거래 전략</a>
+        <p class="post-item__summary">상수 노래방 추천정보를 검색하며 자연스럽게 유입되는 트래픽은 마케팅 분석의 훌륭한 샘플이 됩니다. 많은 이들이 온라인상에서 정보를 얻으려 할 때 실수를 범하는 지점은 키워드의 연관성을 무시한 무분별</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0240.html">상수 노래방 추천정보 활용 마포 홍대 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">상수 노래방 추천정보를 탐색하는 이들은 홍대와 합정 인근에서 단체 모임을 계획 중인 경우가 많습니다. 지역적 특색을 고려할 때 가라오케 선택은 위치와 접근성이 가장 중요한 체크리스트가 됩니다. 대중</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0241.html">상수 노래방 추천정보 및 마포 단체 회식용 대형 룸 노래방 가격 정보 가이드</a>
+        <p class="post-item__summary">직장 동료들과 저녁 식사를 마친 뒤 마땅한 이차 장소를 찾지 못해 당황했던 경험이 한 번쯤 있을 것입니다. 특히 인원이 열 명을 넘어서는 단체 회식이라면 좁은 공간보다는 넓고 쾌적한 환경이 우선 고</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0242.html">상수 노래방 추천정보와 마포 홍대 로컬 럭셔리 밤문화 가이드 살펴보기</a>
+        <p class="post-item__summary">많은 사람이 홍대와 상수 인근의 밤문화는 무조건 시끄럽고 복잡하다고 오해하곤 합니다. 하지만 상수 노래방 추천정보를 자세히 들여다보면 실속 있고 분위기 있는 공간들이 곳곳에 숨어 있습니다. 무작정 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0243.html">상수 노래방 추천정보 기반 마포 유흥 투명 정찰제 가격 정보 디렉토리</a>
+        <p class="post-item__summary">어느 업소를 방문하든 가장 걱정되는 점은 예상치 못한 추가 비용입니다. 상수 노래방 추천정보를 활용하는 목적 중 하나는 정직하게 운영되는 곳을 찾아내는 데 있습니다. 시설의 청결도와 음향 장비의 수</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0244.html">상수 노래방 추천정보 활용 마포 셔츠룸 예약 시 눈탱이 피하는 법</a>
+        <p class="post-item__summary">혹시 낯선 환경에서 바가지를 쓰지 않을까 걱정하며 망설인 적이 있으신가요? 상수 노래방 추천정보를 찾는 많은 이들이 가장 우려하는 것이 바로 예약 과정에서의 불투명한 거래입니다. 꼼꼼히 확인하지 않</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0245.html">상수 노래방 추천정보 확인하며 살펴보는 마포 코인노래방 방음 시설 비교 가이드</a>
+        <p class="post-item__summary">상수 노래방 추천정보를 찾으시는 분들은 주로 쾌적한 음향 환경을 중요하게 고려합니다. 특히 다중 이용 시설인 코인노래방에서는 옆 방의 소리가 섞이지 않아야 온전한 몰입이 가능합니다. 방음 성능을 객</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0246.html">상수 노래방 추천정보 활용하여 분석하는 마포 셔츠룸 리얼 후기 소셜 마케팅 가이드</a>
+        <p class="post-item__summary">상수 노래방 추천정보를 찾다 보면 자연스럽게 셔츠룸과 같은 유흥 문화에 대한 정보도 접하게 됩니다. 소비자 입장에서 가장 혼란스러운 점은 온라인상에 넘쳐나는 광고와 실제 방문객의 후기를 구분하기 어</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0247.html">상수 노래방 추천정보 통해서 살펴보는 구글 신뢰 지수 모발이식 솔루션</a>
+        <p class="post-item__summary">상수 노래방 추천정보를 검색하는 것과 건강 관련 정보를 찾는 것은 정보의 신뢰성 면에서 맥락을 같이합니다. 많은 이들이 온라인상에서 검색 결과를 맹신하다가 실패를 겪기도 합니다. 특히 전문적인 의료</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0248.html">상수 노래방 추천정보 비교로 알아보는 망원 노래방 추천정보</a>
+        <p class="post-item__summary">상수 노래방 추천정보와 함께 자주 언급되는 지역이 바로 망원입니다. 노래방을 선택할 때 가장 큰 고민은 가격대와 시설의 만족도 사이에서 균형을 맞추는 일입니다. 두 선택지를 대조하여 본인에게 맞는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0249.html">상수 노래방 추천정보 읽고 피하는 홍대 노래방 추천정보 실패 사례</a>
+        <p class="post-item__summary">상수 노래방 추천정보를 찾던 사람들이 홍대 지역의 노래방을 예약할 때 흔히 겪는 실패 사례가 존재합니다. 가장 많은 불만은 예약 절차의 모호함에서 시작되며, 상세 정보 확인 없이 무작정 방문했다가 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0250.html">상수 노래방 추천정보 이용자가 체크할 공덕 셔츠룸 추천정보</a>
+        <p class="post-item__summary">상수 노래방 추천정보를 검색하는 이용자층은 다양한 엔터테인먼트 시설에도 관심이 많습니다. 특히 공덕 지역의 셔츠룸을 방문할 계획이라면 사전에 반드시 확인해야 할 체크리스트가 있습니다. 위치와 접근성</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0251.html">상수 노래방 추천정보 확인하며 연남 유흥 추천정보 알아보기</a>
+        <p class="post-item__summary">친구들과 홍대 근처에서 모임을 하다가 갑작스럽게 장소를 옮겨야 하는 상황을 마주할 때가 있습니다. 익숙한 상수 노래방 추천정보를 검색하는 것도 좋지만, 조금 더 분위기 있는 곳을 찾는다면 자연스럽게</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0252.html">상수 노래방 추천정보 무색하게 만드는 마곡 가라오케 추천정보</a>
+        <p class="post-item__summary">흔히 가라오케는 무조건 밤늦게 가야 제맛이라는 오해를 하는 분들이 많습니다. 하지만 상수 노래방 추천정보를 찾던 분들이 마곡으로 넘어오면 이 시간대에 대한 인식을 완전히 바꿔야 한다는 것을 깨닫게 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260731-0030.html">상수 노래방 추천정보 및 이용 안내</a>
+        <p class="post-item__summary">상수역 주변은 다양한 음향 시설을 갖춘 노래방이 형성되어 있는 유흥 및 문화 지역입니다. 이 지역에서 여가 공간을 검색할 때 상수 노래방 추천정보를 먼저 알아두면 이용 목적에 적합한 공간을 효율적으</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003-7l42ao.html">상수 노래방 추천정보</a>
+        <p class="post-item__summary">상수 지역은 홍대와 합정 사이에서 독특한 분위기를 자아내는 곳입니다. 2~3명의 소규모 인원이라면 음향 시스템의 퀄리티가 좋은 곳을, 6명 이상의 단체라면 룸의 크기와 이동 동선을 우선 고려해야 합</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003.html">커스텀 키보드 빌더의 이야기</a>
+        <p class="post-item__summary">함께 보면 좋은 정보</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-13mnegy.html">상수 노래방 추천정보: 실패 없는 밤을 위한 이용 가이드</a>
+        <p class="post-item__summary">상수는 특유의 아기자기한 감성과 활기찬 에너지가 공존하는 곳입니다. 이곳에서 노래방을 찾는다면 단순히 노래만 부르는 공간을 넘어, 일행과의 분위기를 어떻게 이어갈지를 먼저 고민해야 합니다. 상수역 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-86au54.html">상수 노래방 추천정보</a>
+        <p class="post-item__summary">상수역 근처는 독특한 개성을 가진 가게들이 모여 있어 노래방을 선택할 때도 고민이 많아지기 마련입니다. 단순히 가까운 곳을 선택하기보다 모임의 성격에 맞는 공간을 찾는 것이 무엇보다 중요합니다. 우</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-001-1iphktp.html">상수 노래방 추천정보</a>
+        <p class="post-item__summary">상수 인근의 노래방 문화는 단순히 곡을 부르는 공간을 넘어, 특정 목적을 달성하기 위한 전략적 선택지가 되어야 합니다. 많은 이들이 단순히 '저렴한 곳'을 찾지만, 실제 현장에서는 시간당 요금 외에</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+      <a class="pager__link" href="posts-3.html">3</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
